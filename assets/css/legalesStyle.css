@@ -31,8 +31,10 @@ body {
 .quick-nav {
     background: white;
     border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 1;
+    /* position: sticky; */
+    position: fixed;
+    width: 100%;
+    top: 0;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -731,6 +733,7 @@ a:focus {
     background: linear-gradient(135deg, var(--primary-blue) 0%, #2563eb 100%);
     color: var(--white);
     padding: 3rem 2rem;
+    margin-top: 60px;
     text-align: center;
 }
 
