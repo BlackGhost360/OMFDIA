@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des cookies – Fonds Mondial pour le Développement Inclusif (FMDI)</title>
+    <meta name="description" content="Gérez vos préférences de cookies sur le site du FMDI. Conformité RGPD, protection des données personnelles, consentement granulaire pour traceurs statistiques et marketing.">
+    <meta name="keywords" content="RGPD, cookies, préférences, protection données, consentement, FMDI, développement inclusif">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="../assets/css/legalesStyle.css">
+
+</head>
+
+<body>
+    <!-- Navigation rapide -->
+    <nav class="quick-nav" role="navigation" aria-label="Navigation rapide des sections">
+        <a href="../index.html" class="logo" aria-label="logo FMDI">
+            <img src="../assets/images/fmdi-logo-3.png" alt="" height="60" width="150">
+            <!-- FMDI -->
+        </a>
+        <div class="quick-nav-container">
+            <ul class="nav-list">
+                <li><a href="#typeCookies">Type de cookies</a></li>
+                <li><a href="#preferences">Preferences</a></li>
+                <li><a href="#modification">Modification</a></li>
+                <li><a href="#informations">Informations</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu-toggle" aria-label="Menu mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="section cgu-header">
+                <h1>Gestion des cookies</h1>
+                <p>Notre site utilise des cookies pour améliorer votre expérience,</p>
+                <p>assurer le fonctionnement du site, mesurer l'audience et personnaliser les contenus.</p>
+                <p>Votre consentement reste libre et modifiable à tout moment.</p>
+            </div>
+            <section class="section" id="typeCookies">
+                <h2>Types de cookies utilisés</h2>
+                <p>Voici la liste détaillée des cookies utilisés sur notre site, classés par catégorie :</p>
+
+                <table class="cookie-table" role="table" aria-label="Liste des cookies utilisés">
+                    <thead>
+                        <tr>
+                            <th scope="col">Catégorie</th>
+                            <th scope="col">Nom du cookie</th>
+                            <th scope="col">Finalité</th>
+                            <th scope="col">Durée</th>
+                            <th scope="col">Fournisseur</th>
+                            <th scope="col">Consentement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="category-badge category-necessary">Nécessaire</span></td>
+                            <td>PHPSESSID</td>
+                            <td>Maintien de la session utilisateur</td>
+                            <td>Session</td>
+                            <td>FMDI</td>
+                            <td>Non requis</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category-badge category-necessary">Nécessaire</span></td>
+                            <td>csrf_token</td>
+                            <td>Protection contre les attaques CSRF</td>
+                            <td>Session</td>
+                            <td>FMDI</td>
+                            <td>Non requis</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category-badge category-analytics">Statistiques</span></td>
+                            <td>_ga</td>
+                            <td>Analyse de l'audience et statistiques</td>
+                            <td>13 mois</td>
+                            <td>Google Analytics</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category-badge category-analytics">Statistiques</span></td>
+                            <td>_gid</td>
+                            <td>Identification des visiteurs uniques</td>
+                            <td>24 heures</td>
+                            <td>Google Analytics</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category-badge category-preferences">Préférences</span></td>
+                            <td>language_pref</td>
+                            <td>Mémorisation de la langue choisie</td>
+                            <td>1 an</td>
+                            <td>FMDI</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category-badge category-marketing">Marketing</span></td>
+                            <td>_fbp</td>
+                            <td>Tracking publicitaire Facebook</td>
+                            <td>3 mois</td>
+                            <td>Facebook</td>
+                            <td>Oui</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="section" id="preferences">
+                <h2>Gérer vos préférences</h2>
+                <p>Vous pouvez activer ou désactiver chaque catégorie de cookies selon vos préférences. Les cookies strictement nécessaires ne peuvent pas être désactivés.</p>
+
+                <div class="cookie-controls">
+                    <div class="cookie-category">
+                        <div class="category-info">
+                            <h3>Cookies strictement nécessaires</h3>
+                            <p>Ces cookies sont indispensables au fonctionnement du site et ne peuvent pas être désactivés.</p>
+                        </div>
+                        <label class="toggle-switch" aria-label="Cookies nécessaires - toujours activés">
+                            <input type="checkbox" checked disabled>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="cookie-category">
+                        <div class="category-info">
+                            <h3>Cookies statistiques</h3>
+                            <p>Ces cookies nous aident à comprendre comment vous interagissez avec notre site en collectant des informations anonymes.</p>
+                        </div>
+                        <label class="toggle-switch" aria-label="Activer ou désactiver les cookies statistiques">
+                            <input type="checkbox" id="analytics" data-category="analytics">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="cookie-category">
+                        <div class="category-info">
+                            <h3>Cookies de préférences</h3>
+                            <p>Ces cookies permettent au site de mémoriser vos choix (langue, région) pour vous offrir une expérience personnalisée.</p>
+                        </div>
+                        <label class="toggle-switch" aria-label="Activer ou désactiver les cookies de préférences">
+                            <input type="checkbox" id="preferences" data-category="preferences">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="cookie-category">
+                        <div class="category-info">
+                            <h3>Cookies marketing</h3>
+                            <p>Ces cookies suivent votre activité de navigation pour afficher des publicités pertinentes et mesurer l'efficacité des campagnes.</p>
+                        </div>
+                        <label class="toggle-switch" aria-label="Activer ou désactiver les cookies marketing">
+                            <input type="checkbox" id="marketing" data-category="marketing">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="rejectAll()">Tout refuser</button>
+                    <button class="btn btn-primary" onclick="acceptAll()">Tout accepter</button>
+                    <button class="btn btn-success" onclick="savePreferences()">Sauvegarder mes préférences</button>
+                </div>
+            </section>
+
+            <section class="section" id="modification">
+                <h2>Modification de vos choix</h2>
+                <div class="info-box">
+                    <p><strong>Vous pouvez modifier vos préférences à tout moment :</strong></p>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>En revenant sur cette page via le lien en bas de chaque page du site</li>
+                        <li>En cliquant sur l'icône cookie flottante en bas à droite de votre écran</li>
+                        <li>En effaçant les cookies de votre navigateur</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section" id="informations">
+                <h2>Informations complémentaires</h2>
+                <p>Pour plus d'informations sur le traitement de vos données personnelles :</p>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                    <li><a href="/politique-confidentialite" style="color: var(--accent-orange);">Consultez notre Politique de confidentialité complète</a></li>
+                    <li>Exercez vos droits (accès, rectification, suppression) en nous contactant</li>
+                    <li>Contact DPO : <a href="mailto:dpo@fmdi.org" style="color: var(--accent-orange);">dpo@fmdi.org</a></li>
+                </ul>
+            </section>
+
+            <!-- Date de mise à jour -->
+            <div class="last-update">
+                <strong>Dernière mise à jour :</strong> 31 juillet 2025
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>
+                    <img src="../assets/images/fmdi-logo-3.png" alt="" height="55" width="150">
+                </h3>
+                <p>Fonds Mondial pour le Développement Inclusif</p>
+                <p>123 Avenue de la Solidarité Internationale</p>
+                <p>75001 Paris, France</p>
+                <p>Tel: +33 (0)1 23 45 67 89</p>
+                <p>Email: <a href="mailto:contact@fmdi.org">contact@fmdi.org</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <p></p><a href="./mention-legal.html">Mentions légales</a></p>
+                <p></p><a href="./politique-de-confidentialite.html">Politique de confidentialité</a></p>
+                <!-- <p></p><a href="./cookies.html">Gestion des cookies</a></p> -->
+                <!-- <p><a href="#accessibilite">Accessibilité</a></p> -->
+                <p></p><a href="./cgv.html">Conditions générales</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <p><a href="#" aria-label="Suivez-nous sur Facebook">Facebook</a></p>
+                <p><a href="#" aria-label="Suivez-nous sur Twitter">Twitter</a></p>
+                <p><a href="#" aria-label="Suivez-nous sur LinkedIn">LinkedIn</a></p>
+                <p><a href="#" aria-label="Notre chaîne YouTube">YouTube</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fonds Mondial pour le Développement Inclusif (FMDI). Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bouton flottant -->
+    <button class="cookie-float-btn" onclick="scrollToTop()" aria-label="Retour en haut de la page de gestion des cookies" title="Gérer les cookies">
+        <i class="fas fa-arrow-up" style="color: var(--dark); font-size: 20px;"></i>
+    </button>
+
+    <!-- Notification -->
+    <div class="notification" id="notification" role="alert" aria-live="polite">
+        Vos préférences ont été enregistrées avec succès !
+    </div>
+
+
+    <script src="../assets/js/legalsScript.js"></script>
+
+</body>
+
+</html>

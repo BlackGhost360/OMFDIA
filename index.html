@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMDI - Contribuer à un futur équitable et inclusif par l'innovation solidaire</title>
+    <meta name="description" content="Le Fonds Mondial pour le Développement Inclusif finance des projets innovants pour un monde plus équitable. Découvrez nos actions en santé, éducation, agriculture et énergie.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Schema.org structured data pour le SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NGO",
+            "name": "Fonds Mondial pour le Développement Inclusif",
+            "alternateName": "FMDI",
+            "url": "https://www.fmdi.org",
+            "logo": "https://www.fmdi.org/logo.png",
+            "description": "Organisation internationale dédiée au financement de projets de développement inclusif sans contrainte de remboursement",
+            "foundingDate": "2018",
+            "founders": [{
+                "@type": "Person",
+                "name": "Sarah Mitchell",
+                "jobTitle": "Directrice Générale & Co-fondatrice"
+            }, {
+                "@type": "Person",
+                "name": "Dr. Kwame Asante",
+                "jobTitle": "Directeur des Programmes & Co-fondateur"
+            }],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "75 Avenue des Champs-Élysées",
+                "addressLocality": "Paris",
+                "postalCode": "75008",
+                "addressCountry": "FR"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+33-1-45-67-89-10",
+                "contactType": "Customer Service",
+                "email": "contact@fmdi.org"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/fmdi",
+                "https://twitter.com/fmdi_org",
+                "https://www.facebook.com/fmdi.org"
+            ],
+            "knowsAbout": [
+                "Développement inclusif",
+                "Financements solidaires",
+                "Développement durable",
+                "Coopération internationale"
+            ],
+            "areaServed": "Worldwide"
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Accessibility Banner -->
+    <div class="accessibility-banner" id="accessibilityBanner">
+        <span>Ce site est conçu pour être accessible à tous. Utilisez Tab pour naviguer, Entrée pour activer.</span>
+        <button onclick="closeAccessibilityBanner()" aria-label="Fermer le message d'accessibilité">×</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="./index.html" class="logo" aria-label="Accueil FMDI">
+                <img src="./assets/images/fmdi-logo-3.png" alt="" height="60" width="150">
+                <!-- FMDI -->
+            </a>
+
+            <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+                <a href="./index.html" class="active-nav">Accueil</a>
+                <a href="./about.html">À propos</a>
+                <a href="./projets-finances.html">Projets financés</a>
+                <a href="./project-submission.html">Dépôt de projet</a>
+                <a href="./secteurs-intervention.html">Secteurs</a>
+                <a href="./partners-page.html">Partenaires</a>
+                <a href="./contact-page.html">Contact</a>
+
+                <div class="language-selector">
+                    <button class="active" aria-label="Version française">FR</button>
+                    <button aria-label="English version">EN</button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Contribuer à un futur équitable et inclusif par l'innovation solidaire</h1>
+            <p>Le Fonds Mondial pour le Développement Inclusif finance des projets innovants qui transforment des vies et construisent un monde plus juste pour tous.</p>
+            <div class="hero-h-buttons">
+                <a href="./projets-finances.html" class="btn-h btn-h-primary">
+                    <i class="fas fa-compass"></i> Découvrir
+                </a>
+                <a href="./project-submission.html" class="btn-h btn-h-secondary mt-4">
+                    <i class="fas fa-upload"></i> Déposer un projet
+                </a>
+                <!-- <a href="#don" class="btn-h btn-h-accent">
+                    <i class="fas fa-heart"></i> Faire un don
+                </a> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Mission Section -->
+
+    <section class="section mission-home animate-on-scroll" id="mission">
+        <div class="container">
+            <div class="mission-home-content">
+                <div class="mission-home-text">
+                    <h3>Notre Mission Mondiale</h3>
+                    <p>Le FMDI œuvre pour un développement inclusif en finançant des projets innovants dans les domaines de la santé, l'éducation, l'agriculture durable et l'accès à l'énergie. Notre approche privilégie l'impact social, l'équité de genre
+                        et la durabilité environnementale.</p>
+                    <p>Avec une attention particulière portée à l'Afrique et aux populations les plus vulnérables, nous croyons que l'innovation solidaire peut transformer les communautés et créer un avenir plus équitable pour tous.</p>
+                    <a href="./about.html" class="btn-h btn-h-primary">En savoir plus</a>
+                </div>
+                <div class="mission-home-values">
+                    <div class="value-card-home">
+                        <i class="fas fa-globe-africa"></i>
+                        <h4>Impact Global</h4>
+                        <p>Portée mondiale avec focus sur l'Afrique et les régions en développement</p>
+                    </div>
+                    <div class="value-card-home">
+                        <i class="fas fa-users"></i>
+                        <h4>Inclusivité</h4>
+                        <p>Priorité aux femmes et aux communautés marginalisées</p>
+                    </div>
+                    <div class="value-card-home">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Innovation</h4>
+                        <p>Solutions créatives pour les défis du développement</p>
+                    </div>
+                    <div class="value-card-home">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Durabilité</h4>
+                        <p>Respect de l'environnement et viabilité à long terme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats Section -->
+    <section class="section stats animate-on-scroll">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1247">0</span>
+                    <div class="stat-label">Projets financés</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2850000">0</span>
+                    <div class="stat-label">Bénéficiaires directs</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="48">0</span>
+                    <div class="stat-label">% Projets en Afrique</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="70">0</span>
+                    <div class="stat-label">% Femmes bénéficiaires</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects animate-on-scroll" id="projets">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projets Phares</h2>
+                <p>Découvrez quelques-uns de nos projets les plus impactants qui transforment des vies à travers le monde</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- <i class="fas fa-heartbeat"></i> -->
+                        <img src="./assets/images/index-télémédecine-Rurale.jpeg" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h4>Télémédecine Rurale - Sénégal</h4>
+                        <p>Déploiement de centres de télémédecine dans 15 villages ruraux pour améliorer l'accès aux soins de santé primaires.</p>
+                        <div class="project-impact">
+                            <strong>Impact :</strong> 25,000 consultations réalisées, réduction de 40% des déplacements médicaux
+                        </div>
+                        <div class="testimonial">
+                            "Grâce à ce projet, nous poons maintenant consulter un médecin sans parcourir 50 km. Cela a sauvé la vie de mon enfant." - Aminata, bénéficiaire
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- <i class="fas fa-graduation-cap"></i> -->
+                        <img src="./assets/images/index-education-Numérique.jpeg" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h4>Éducation Numérique - Madagascar</h4>
+                        <p>Formation de 500 enseignants aux outils numériques et équipement de 30 écoles en tablettes solaires.</p>
+                        <div class="project-impact">
+                            <strong>Impact :</strong> 12,000 élèves touchés, amélioration de 60% des résultats scolaires
+                        </div>
+                        <div class="testimonial">
+                            "Les tablettes ont révolutionné notre façon d'enseigner. Les enfants sont plus engagés et apprennent plus vite." - Hery, enseignant
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- <i class="fas fa-seedling"></i> -->
+                        <img src="./assets/images/index-Agriculture-Intelligente.jpeg" alt="">
+
+                    </div>
+                    <div class="project-content">
+                        <h4>Agriculture Intelligente - Ghana</h4>
+                        <p>Introduction de techniques d'agriculture de précision et formation de 800 agricultrices aux méthodes durables.</p>
+                        <div class="project-impact">
+                            <strong>Impact :</strong> +45% de rendement, -30% d'usage d'eau, 800 femmes formées
+                        </div>
+                        <div class="testimonial">
+                            "J'ai doublé ma production de maïs tout en préservant mes terres. Ma famille mange mieux et mes enfants vont à l'école." - Akosua, agricultrice
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors Section -->
+    <section class="section sectors animate-on-scroll" id="secteurs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Secteurs d'Intervention</h2>
+                <p>Nous concentrons nos efforts sur quatre domaines clés pour maximiser notre impact sur le développement inclusif</p>
+            </div>
+            <div class="sectors-grid">
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h4>Santé</h4>
+                    <p>Amélioration de l'accès aux soins, télémédecine, santé maternelle et infantile, lutte contre les maladies endémiques</p>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Éducation</h4>
+                    <p>Formation professionnelle, éducation numérique, alphabétisation des adultes, égalité des genres en éducation</p>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4>Agriculture</h4>
+                    <p>Agriculture durable, sécurité alimentaire, techniques innovantes, formation des agriculteurs, circuits courts</p>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h4>Énergie</h4>
+                    <p>Accès à l'énergie propre, solutions solaires, efficacité énergétique, mini-réseaux ruraux</p>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4>Eau & Assainissement</h4>
+                    <p>Accès à l'eau potable, systèmes d'assainissement, gestion durable des ressources hydriques</p>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h4>Numérique</h4>
+                    <p>Inclusion numérique, formation aux TIC, e-gouvernance, solutions digitales innovantes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Rejoignez Notre Mission</h2>
+                <p style="color: rgba(255,255,255,0.9);">Ensemble, nous pouvons créer un impact durable et transformer des millions de vies à travers le monde</p>
+            </div>
+            <div class="cta-buttons">
+                <!-- <a href="#don" class="btn-h" style="background: white; color: var(--blue-primary);">
+                    <i class="fas fa-heart"></i> Faire un don
+                </a> -->
+                <a href="./contact-page.html" class="btn-h" style="background: transparent; color: white; border: 2px solid white;">
+                    <i class="fas fa-handshake"></i> Devenir partenaire
+                </a>
+                <a href="./project-submission.html" class="btn-h" style="background: var(--orange-accent); color: white;">
+                    <i class="fas fa-lightbulb"></i> Soumettre un projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Restez Informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités, appels à projets et rapports d'impact</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required aria-label="Adresse email pour la newsletter">
+                <button type="submit" class="btn-h btn-h-primary">
+                    <i class="fas fa-envelope"></i>
+                    S'abonner
+                </button>
+            </form>
+            <p style="font-size: 14px; margin-top: 15px; opacity: 0.7;">
+                En vous abonnant, vous acceptez de recevoir nos communications. Vous pouvez vous désabonner à tout moment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section partners animate-on-scroll" id="partenaires">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Partenaires Stratégiques</h2>
+                <p>Nous collaborons avec des organisations internationales reconnues pour maximiser notre impact</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <strong>FMI</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>ONU</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>Banque Mondiale</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>AFD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>BAD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>UNESCO</strong>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; font-style: italic; color: var(--blue-primary);">
+                "Des partenariats solides pour des solutions durables et un impact global"
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>
+                    <img src="./assets/images/fmdi-logo-3.png" alt="" height="50" width="100">
+                </h4>
+                <p>Fonds Mondial pour le Développement Inclusif</p>
+                <p>Siège digital - Présence mondiale</p>
+                <p>Email: contact@fmdi.org</p>
+                <p>Tél: +33 1 23 45 67 89</p>
+                <!-- <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div> -->
+            </div>
+
+            <div class="footer-section">
+                <h4>Actions</h4>
+                <a href="./project-submission.html">Déposer un projet</a>
+                <a href="./contact-page.html">Devenir partenaire</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <a href="./about.html">À propos</a>
+                <a href="./secteurs-intervention.html">Secteurs d'intervention</a>
+                <a href="./projets-finances.html">Projets financés</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <a href="./legals/mention-legal.html" target="_blank">Mentions légales</a>
+                <a href="./legals/politique-de-confidentialite.html" target="_blank">Politique de confidentialité</a>
+                <a href="./legals/cookies.html" target="_blank">Gestion des cookies</a>
+                <!-- <a href="#accessibilite">Accessibilité</a> -->
+                <a href="./legals/cgv.html" target="_blank">Conditions générales</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FMDI - Fonds Mondial pour le Développement Inclusif. Tous droits réservés.</p>
+            <p>Site conçu avec accessibilité et performance en priorité</p>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js?v=1"></script>
+</body>
+
+</html>

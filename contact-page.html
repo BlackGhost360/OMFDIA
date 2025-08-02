@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez le Fonds Mondial pour le Développement Inclusif (FMDI) - Support, informations et partenariats pour un développement durable et inclusif.">
+    <meta name="keywords" content="FMDI, contact, développement inclusif, partenariat, solidarité, ONG">
+    <title>Contact Fonds Mondial pour le Développement Inclusif – Support, Informations et Partenariats</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="./index.html" class="logo" aria-label="Accueil FMDI">
+                <img src="./assets/images/fmdi-logo-3.png" alt="" height="60" width="150">
+                <!-- FMDI -->
+            </a>
+
+            <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+                <a href="./index.html">Accueil</a>
+                <a href="./about.html">À propos</a>
+                <a href="./projets-finances.html">Projets financés</a>
+                <a href="./project-submission.html">Dépôt de projet</a>
+                <a href="./secteurs-intervention.html">Secteurs</a>
+                <a href="./partners-page.html">Partenaires</a>
+                <a href="./contact-page.html" class="active-nav">Contact</a>
+
+                <div class="language-selector">
+                    <button class="active" aria-label="Version française">FR</button>
+                    <button aria-label="English version">EN</button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero-about" role="banner">
+        <div class="hero-about-content">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes à votre écoute pour répondre à vos questions, accompagner vos projets ou échanger sur nos actions de développement inclusif.</p>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <main class="container-contact">
+        <!-- Introduction -->
+        <section class="intro-section-contact">
+            <h2>Entrer en contact avec le FMDI</h2>
+            <p>Que vous soyez un partenaire potentiel, un bénéficiaire de nos programmes, un donateur engagé ou un bénévole motivé, nous sommes là pour vous accompagner. N'hésitez pas à nous faire part de vos questions, suggestions ou propositions de collaboration.
+            </p>
+        </section>
+
+        <!-- Contact Grid -->
+        <div class="contact-grid">
+            <!-- Contact Image -->
+            <div class="contact-image">
+                <!-- Placeholder for image - can be replaced with actual image URL -->
+                <!-- <div class="image-placeholder">
+                    <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                    <p>Mains unies symbolisant la solidarité et le soutien au développement inclusif</p>
+                </div> -->
+                <!-- Uncomment and replace with actual image: -->
+                <img src="./assets/images/fmdi-image1.jpeg" alt="Mains unies symbolisant la solidarité et le soutien au développement inclusif" loading="lazy">
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+                </div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Prénom *</label>
+                            <input type="text" id="firstName" name="firstName" required aria-describedby="firstNameError">
+                            <div class="error-message" id="firstNameError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nom *</label>
+                            <input type="text" id="lastName" name="lastName" required aria-describedby="lastNameError">
+                            <div class="error-message" id="lastNameError"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail *</label>
+                        <input type="email" id="email" name="email" required aria-describedby="emailError">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet de votre demande *</label>
+                        <select id="subject" name="subject" required aria-describedby="subjectError">
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="partenariat">Partenariat et collaboration</option>
+                            <option value="beneficiaire">Demande d'aide ou de soutien</option>
+                            <option value="don">Don et financement</option>
+                            <option value="benevolat">Bénévolat et engagement</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="presse">Demande presse</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <div class="error-message" id="subjectError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre message *</label>
+                        <textarea id="message" name="message" required aria-describedby="messageError" placeholder="Décrivez votre demande, projet ou question en détail..."></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Envoyer votre message</span>
+                        <i class="fas fa-paper-plane" style="margin-left: 0.5rem;"></i>
+                    </button>
+
+                    <div class="gdpr-notice">
+                        <i class="fas fa-shield-alt"></i>
+                        <strong>Protection des données :</strong> Vos informations personnelles sont traitées de manière confidentielle conformément au RGPD. Elles ne seront utilisées que pour répondre à votre demande et ne seront pas partagées avec des
+                        tiers sans votre consentement.
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <h3>Email</h3>
+                <p>contact@fmdi.org</p>
+                <p>partenariats@fmdi.org</p>
+                <p>Réponse sous 24-48h</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <h3>Téléphone</h3>
+                <p>+229 XX XX XX XX</p>
+                <p>Lun-Ven : 8h00-17h00 (GMT+1)</p>
+                <p>Urgences : 24h/7j</p>
+            </div>
+
+            <!-- <div class="info-card">
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+                <h3>Réseaux sociaux</h3>
+                <p>Suivez notre actualité</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook du FMDI" title="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter du FMDI" title="Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn du FMDI" title="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube du FMDI" title="YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div> -->
+        </section>
+    </main>
+
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Restez Informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités, appels à projets et rapports d'impact</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required aria-label="Adresse email pour la newsletter">
+                <button type="submit" class="btn-h btn-h-primary">
+                    <i class="fas fa-envelope"></i>
+                    S'abonner
+                </button>
+            </form>
+            <p style="font-size: 14px; margin-top: 15px; opacity: 0.7;">
+                En vous abonnant, vous acceptez de recevoir nos communications. Vous pouvez vous désabonner à tout moment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section partners animate-on-scroll" id="partenaires">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Partenaires Stratégiques</h2>
+                <p>Nous collaborons avec des organisations internationales reconnues pour maximiser notre impact</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <strong>FMI</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>ONU</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>Banque Mondiale</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>AFD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>BAD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>UNESCO</strong>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; font-style: italic; color: var(--blue-primary);">
+                "Des partenariats solides pour des solutions durables et un impact global"
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>
+                    <img src="./assets/images/fmdi-logo-3.png" alt="" height="50" width="100">
+                </h4>
+                <p>Fonds Mondial pour le Développement Inclusif</p>
+                <p>Siège digital - Présence mondiale</p>
+                <p>Email: contact@fmdi.org</p>
+                <p>Tél: +33 1 23 45 67 89</p>
+                <!-- <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div> -->
+            </div>
+
+            <div class="footer-section">
+                <h4>Actions</h4>
+                <a href="./project-submission.html">Déposer un projet</a>
+                <a href="./contact-page.html">Devenir partenaire</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <a href="./about.html">À propos</a>
+                <a href="./secteurs-intervention.html">Secteurs d'intervention</a>
+                <a href="./projets-finances.html">Projets financés</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <a href="./legals/mention-legal.html" target="_blank">Mentions légales</a>
+                <a href="./legals/politique-de-confidentialite.html" target="_blank">Politique de confidentialité</a>
+                <a href="./legals/cookies.html" target="_blank">Gestion des cookies</a>
+                <!-- <a href="#accessibilite">Accessibilité</a> -->
+                <a href="./legals/cgv.html" target="_blank">Conditions générales</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FMDI - Fonds Mondial pour le Développement Inclusif. Tous droits réservés.</p>
+            <p>Site conçu avec accessibilité et performance en priorité</p>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js?v=1"></script>
+
+</body>
+
+</html>

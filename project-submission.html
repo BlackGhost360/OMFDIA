@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déposer un projet - FMDI | Financement de microprojets de développement international</title>
+    <meta name="description" content="Soumettez votre projet de développement international au FMDI. Financement pour communautés vulnérables, éducation, santé, environnement. Formulaire sécurisé et accompagnement personnalisé.">
+    <meta name="keywords" content="dépôt projet ONG, financement microprojets développement, FMDI, développement international, communautés vulnérables">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="submission-body">
+    <header>
+        <div class="header-container">
+            <a href="./index.html" class="logo" aria-label="Accueil FMDI">
+                <img src="./assets/images/fmdi-logo-3.png" alt="" height="60" width="150">
+                <!-- FMDI -->
+            </a>
+
+            <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+                <a href="./index.html">Accueil</a>
+                <a href="./about.html">À propos</a>
+                <a href="./projets-finances.html">Projets financés</a>
+                <a href="./project-submission.html" class="active-nav">Dépôt de projet</a>
+                <a href="./secteurs-intervention.html">Secteurs</a>
+                <a href="./partners-page.html">Partenaires</a>
+                <a href="./contact-page.html">Contact</a>
+
+                <div class="language-selector">
+                    <button class="active" aria-label="Version française">FR</button>
+                    <button aria-label="English version">EN</button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section class="hero-about" role="banner">
+        <div class="hero-about-content">
+            <h1>Déposez votre projet</h1>
+            <p class="hero-about-subtitle">
+                Soumettez votre projet de développement international et rejoignez notre communauté d'acteurs du changement. Ensemble, construisons un avenir plus équitable pour tous.
+            </p>
+        </div>
+    </section>
+    <!-- Main Content -->
+    <main class="main-ps">
+        <div class="container">
+            <!-- Introduction Section -->
+            <section class="intro-section fade-in">
+                <div class="mission-highlight">
+                    <h2 style="margin-bottom: 1rem; font-size: 1.3rem;">
+                        <i class="fas fa-heart" aria-hidden="true"></i> Notre Mission
+                    </h2>
+                    <p>
+                        Le FMDI soutient les initiatives locales qui renforcent l'autonomie des communautés vulnérables à travers le monde. Nous finançons des microprojets dans les domaines de l'éducation, la santé, l'environnement et le développement économique durable.
+                    </p>
+                </div>
+
+                <h3 style="font-size: 1.4rem; color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">
+                    Critères d'Éligibilité Principaux
+                </h3>
+
+                <div class="eligibility-criteria">
+                    <div class="criteria-card">
+                        <i class="fas fa-users criteria-icon" aria-hidden="true"></i>
+                        <h4 class="criteria-title">Impact Social</h4>
+                        <p>Projet bénéficiant directement aux communautés vulnérables avec un impact mesurable et durable.</p>
+                    </div>
+
+                    <div class="criteria-card">
+                        <i class="fas fa-seedling criteria-icon" aria-hidden="true"></i>
+                        <h4 class="criteria-title">Développement Durable</h4>
+                        <p>Approche respectueuse de l'environnement et alignée avec les Objectifs de Développement Durable.</p>
+                    </div>
+
+                    <div class="criteria-card">
+                        <i class="fas fa-handshake criteria-icon" aria-hidden="true"></i>
+                        <h4 class="criteria-title">Partenariat Local</h4>
+                        <p>Collaboration avec des acteurs locaux et participation active de la communauté bénéficiaire.</p>
+                    </div>
+
+                    <div class="criteria-card">
+                        <i class="fas fa-chart-line criteria-icon" aria-hidden="true"></i>
+                        <h4 class="criteria-title">Viabilité Financière</h4>
+                        <p>Budget réaliste et transparent avec plan de financement et de pérennisation claire.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="form-section">
+                <div class="form-header">
+                    <h2 class="form-title">Formulaire de Dépôt de Projet</h2>
+                    <p>Complétez les étapes suivantes pour soumettre votre projet. Toutes vos données sont sécurisées et confidentielles.</p>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="progress-step active" id="step1-indicator">
+                            <div class="step-circle">1</div>
+                            <span>Informations générales</span>
+                        </div>
+                        <div class="progress-step" id="step2-indicator">
+                            <div class="step-circle">2</div>
+                            <span>Description du projet</span>
+                        </div>
+                        <div class="progress-step" id="step3-indicator">
+                            <div class="step-circle">3</div>
+                            <span>Éligibilité</span>
+                        </div>
+                        <div class="progress-step" id="step4-indicator">
+                            <div class="step-circle">4</div>
+                            <span>Validation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Submission Form -->
+                <form class="projectForm" id="projectForm" novalidate>
+                    <!-- Step 1: General Information -->
+                    <div class="form-step active" id="step1">
+                        <h3 class="step-title">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i> Informations Générales
+                        </h3>
+
+                        <div class="form-grid two-cols">
+                            <div class="form-group">
+                                <label for="projectName" class="form-label">
+                            Nom du projet <span class="required" aria-label="requis">*</span>
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">Donnez un titre clair et accrocheur qui reflète l'essence de votre projet</span>
+                            </span>
+                        </label>
+                                <input type="text" id="projectName" name="projectName" class="form-input" required maxlength="100" placeholder="Ex: École numérique pour enfants défavorisés" aria-describedby="projectName-error">
+                                <div id="projectName-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sector" class="form-label">
+                            Secteur d'intervention <span class="required" aria-label="requis">*</span>
+                        </label>
+                                <select id="sector" name="sector" class="form-select" required aria-describedby="sector-error">
+                            <option value="">Sélectionnez un secteur</option>
+                            <option value="education">Éducation</option>
+                            <option value="health">Santé</option>
+                            <option value="environment">Environnement</option>
+                            <option value="economic">Développement économique</option>
+                            <option value="agriculture">Agriculture durable</option>
+                            <option value="water">Accès à l'eau</option>
+                            <option value="energy">Énergies renouvelables</option>
+                            <option value="gender">Égalité des genres</option>
+                            <option value="other">Autre</option>
+                        </select>
+                                <div id="sector-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="country" class="form-label">
+                            Pays <span class="required" aria-label="requis">*</span>
+                        </label>
+                                <input type="text" id="country" name="country" class="form-input" required placeholder="Ex: Palestine" aria-describedby="country-error">
+                                <div id="country-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="region" class="form-label">
+                            Région/Ville
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">Précisez la localisation exacte de votre projet</span>
+                            </span>
+                        </label>
+                                <input type="text" id="region" name="region" class="form-input" placeholder="Ex: Gaza city, Gaza">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget" class="form-label">
+                            Budget estimatif (EUR) <span class="required" aria-label="requis">*</span>
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">Montant total nécessaire pour la réalisation du projet</span>
+                            </span>
+                        </label>
+                                <input type="number" id="budget" name="budget" class="form-input" required min="500" max="50000" placeholder="5000" aria-describedby="budget-error">
+                                <div id="budget-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="duration" class="form-label">
+                            Durée du projet (mois) <span class="required" aria-label="requis">*</span>
+                        </label>
+                                <input type="number" id="duration" name="duration" class="form-input" required min="1" max="36" placeholder="12" aria-describedby="duration-error">
+                                <div id="duration-error" class="error-message" role="alert"></div>
+                            </div>
+                        </div>
+
+                        <h4 style="margin: 2rem 0 1rem 0; color: var(--primary-blue);">Coordonnées du Porteur de Projet</h4>
+
+                        <div class="form-grid two-cols">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">
+                            Nom complet <span class="required" aria-label="requis">*</span>
+                        </label>
+                                <input type="text" id="contactName" name="contactName" class="form-input" required placeholder="Prénom NOM" aria-describedby="contactName-error">
+                                <div id="contactName-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="organization" class="form-label">
+                            Organisation/Association
+                        </label>
+                                <input type="text" id="organization" name="organization" class="form-input" placeholder="Nom de votre organisation">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                            Email <span class="required" aria-label="requis">*</span>
+                        </label>
+                                <input type="email" id="email" name="email" class="form-input" required placeholder="votre.email@exemple.com" aria-describedby="email-error">
+                                <div id="email-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">
+                            Téléphone <span class="required" aria-label="requis">*</span>
+                        </label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+970 X XX XX XX X" aria-describedby="phone-error">
+                                <div id="phone-error" class="error-message" role="alert"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Project Description -->
+                    <div class="form-step" id="step2">
+                        <h3 class="step-title">
+                            <i class="fas fa-edit" aria-hidden="true"></i> Description du Projet
+                        </h3>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="summary" class="form-label">
+                            Résumé du projet <span class="required" aria-label="requis">*</span>
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">Décrivez en quelques phrases l'objectif principal et l'impact attendu</span>
+                            </span>
+                        </label>
+                                <textarea id="summary" name="summary" class="form-textarea" required maxlength="500" placeholder="Décrivez brièvement votre projet, ses objectifs et son impact attendu..." aria-describedby="summary-error summary-count"></textarea>
+                                <div class="form-help">
+                                    <span id="summary-count" class="text-sm text-light">0/500 caractères</span>
+                                </div>
+                                <div id="summary-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="context" class="form-label">
+                            Contexte et problématique <span class="required" aria-label="requis">*</span>
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">Expliquez le problème que votre projet vise à résoudre</span>
+                            </span>
+                        </label>
+                                <textarea id="context" name="context" class="form-textarea" required maxlength="1000" placeholder="Quel problème votre projet résout-il ? Pourquoi est-ce important ?" aria-describedby="context-error context-count"></textarea>
+                                <div class="form-help">
+                                    <span id="context-count" class="text-sm text-light">0/1000 caractères</span>
+                                </div>
+                                <div id="context-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="objectives" class="form-label">
+                            Objectifs spécifiques <span class="required" aria-label="requis">*</span>
+                        </label>
+                                <textarea id="objectives" name="objectives" class="form-textarea" required maxlength="800" placeholder="Listez les objectifs concrets que vous souhaitez atteindre..." aria-describedby="objectives-error objectives-count"></textarea>
+                                <div class="form-help">
+                                    <span id="objectives-count" class="text-sm text-light">0/800 caractères</span>
+                                </div>
+                                <div id="objectives-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="beneficiaries" class="form-label">
+                            Bénéficiaires directs <span class="required" aria-label="requis">*</span>
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">Qui bénéficiera directement de votre projet ? Combien de personnes ?</span>
+                            </span>
+                        </label>
+                                <textarea id="beneficiaries" name="beneficiaries" class="form-textarea" required maxlength="500" placeholder="Décrivez qui sont les bénéficiaires et combien de personnes seront impactées..." aria-describedby="beneficiaries-error beneficiaries-count"></textarea>
+                                <div class="form-help">
+                                    <span id="beneficiaries-count" class="text-sm text-light">0/500 caractères</span>
+                                </div>
+                                <div id="beneficiaries-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="methodology" class="form-label">
+                            Méthodologie et activités
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">Comment allez-vous procéder ? Quelles sont les étapes clés ?</span>
+                            </span>
+                        </label>
+                                <textarea id="methodology" name="methodology" class="form-textarea" maxlength="800" placeholder="Décrivez la méthodologie et les principales activités prévues..." aria-describedby="methodology-count"></textarea>
+                                <div class="form-help">
+                                    <span id="methodology-count" class="text-sm text-light">0/800 caractères</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sustainability" class="form-label">
+                            Plan de pérennisation
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">Comment le projet continuera-t-il après la fin du financement ?</span>
+                            </span>
+                        </label>
+                                <textarea id="sustainability" name="sustainability" class="form-textarea" maxlength="600" placeholder="Comment assurer la continuité du projet ?" aria-describedby="sustainability-count"></textarea>
+                                <div class="form-help">
+                                    <span id="sustainability-count" class="text-sm text-light">0/600 caractères</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Eligibility Quiz -->
+                    <div class="form-step" id="step3">
+                        <h3 class="step-title">
+                            <i class="fas fa-clipboard-check" aria-hidden="true"></i> Vérification d'Éligibilité
+                        </h3>
+
+                        <p style="color: var(--text-light); margin-bottom: 2rem;">
+                            Répondez aux questions suivantes pour vérifier automatiquement l'éligibilité de votre projet selon nos critères.
+                        </p>
+
+                        <div class="quiz-question">
+                            <div class="question-text">
+                                1. Votre projet bénéficie-t-il directement à des communautés vulnérables ou défavorisées ?
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                            <input type="radio" name="q1" value="yes" required>
+                            <span>Oui, le projet cible spécifiquement des communautés vulnérables</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q1" value="partial">
+                            <span>Partiellement, il inclut des bénéficiaires vulnérables</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q1" value="no">
+                            <span>Non, il ne cible pas spécifiquement ces communautés</span>
+                        </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <div class="question-text">
+                                2. Votre projet s'inscrit-il dans une démarche de développement durable ?
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                            <input type="radio" name="q2" value="yes" required>
+                            <span>Oui, il respecte les principes du développement durable</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q2" value="partial">
+                            <span>En partie, certains aspects sont durables</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q2" value="no">
+                            <span>Non, ce n'est pas un critère du projet</span>
+                        </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <div class="question-text">
+                                3. Avez-vous établi des partenariats avec des acteurs locaux dans la zone d'intervention ?
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                            <input type="radio" name="q3" value="yes" required>
+                            <span>Oui, des partenariats formels sont déjà établis</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q3" value="partial">
+                            <span>En cours de négociation avec des partenaires locaux</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q3" value="no">
+                            <span>Non, nous travaillerons seuls</span>
+                        </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <div class="question-text">
+                                4. La communauté bénéficiaire participe-t-elle activement à la conception et mise en œuvre du projet ?
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                            <input type="radio" name="q4" value="yes" required>
+                            <span>Oui, elle est impliquée à toutes les étapes</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q4" value="partial">
+                            <span>Partiellement, dans certaines phases</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q4" value="no">
+                            <span>Non, nous gérons le projet intégralement</span>
+                        </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <div class="question-text">
+                                5. Avez-vous un plan de pérennisation du projet après la fin du financement ?
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                            <input type="radio" name="q5" value="yes" required>
+                            <span>Oui, un plan détaillé de pérennisation existe</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q5" value="partial">
+                            <span>En partie, quelques éléments de continuité</span>
+                        </label>
+                                <label class="quiz-option">
+                            <input type="radio" name="q5" value="no">
+                            <span>Non, le projet s'arrêtera à la fin du financement</span>
+                        </label>
+                            </div>
+                        </div>
+
+                        <div id="eligibility-result" class="mt-4"></div>
+                    </div>
+
+                    <!-- Step 4: Validation -->
+                    <div class="form-step" id="step4">
+                        <h3 class="step-title">
+                            <i class="fas fa-check-double" aria-hidden="true"></i> Validation et Soumission
+                        </h3>
+
+                        <div id="form-summary" class="bg-light p-4 rounded mb-4">
+                            <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Résumé de votre projet</h4>
+                            <div id="summary-content"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="quiz-option">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>
+                            J'accepte les <a href="#" target="_blank" style="color: var(--secondary-green);">conditions générales</a> 
+                            et confirme l'exactitude des informations fournies
+                        </span>
+                    </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="quiz-option">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <span>
+                            J'accepte la <a href="#" target="_blank" style="color: var(--secondary-green);">politique de confidentialité</a> 
+                            et autorise le traitement de mes données personnelles
+                        </span>
+                    </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="quiz-option">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <span>
+                            Je souhaite recevoir des informations sur les opportunités de financement et actualités du FMDI
+                        </span>
+                    </label>
+                        </div>
+
+                        <!-- reCAPTCHA placeholder -->
+                        <div class="form-group">
+                            <div style="border: 2px solid var(--border-light); padding: 1rem; border-radius: 0.5rem; text-align: center; background: var(--bg-light);">
+                                <i class="fas fa-shield-alt" style="color: var(--secondary-green); font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                <p style="margin: 0; color: var(--text-light);">Zone reCAPTCHA - Vérification de sécurité</p>
+                                <small style="color: var(--text-light);">(Simulation - En production, intégrez Google reCAPTCHA ici)</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" id="prevBtn" class="btn-ps btn-ps-secondary d-none">
+                                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                                Précédent
+                        </button>
+
+                        <div class="btn-ps-group">
+                            <!-- <button type="button" id="saveDraftBtn" class="btn-ps btn-ps-secondary">
+                                <i class="fas fa-save" aria-hidden="true"></i>
+                                <span class="loading-spinner"></span>
+                                Enregistrer en brouillon
+                            </button> -->
+
+                            <button type="button" id="nextBtn" class="btn-ps btn-ps-primary btn-ps-large ">
+                                Suivant
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+
+                            <button type="submit" id="submitBtn" class="btn-ps btn-ps-primary btn-ps-large d-none">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                <span class="loading-spinner"></span>
+                                Soumettre le projet
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+
+
+            <!-- Security Notice -->
+            <section class="security-notice">
+                <h3 class="security-title">
+                    <i class="fas fa-lock" aria-hidden="true"></i> Confidentialité et Sécurité
+                </h3>
+                <div class="security-text">
+                    <p>
+                        Vos données sont protégées par un chiffrement SSL et traitées conformément au RGPD. Nous nous engageons à maintenir la confidentialité de votre projet et ne partagerons vos informations qu'avec notre comité d'évaluation interne.
+                    </p>
+                    <p>
+                        <strong>Sauvegarde automatique :</strong> Vos données sont automatiquement sauvegardées toutes les 30 secondes pour éviter toute perte d'information.
+                    </p>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="faq-section">
+                <h2 class="faq-title">Questions Fréquentes - Dépôt de Projet</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quels sont les critères d'éligibilité pour un projet ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Pour être éligible, votre projet doit : 1) Bénéficier directement aux communautés vulnérables, 2) S'inscrire dans une démarche de développement durable, 3) Impliquer des partenaires locaux, 4) Avoir un budget entre 500€ et 50,000€, 5) Présenter un plan
+                            de pérennisation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Combien de temps prend l'évaluation d'un projet ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Le processus d'évaluation prend généralement 4 à 6 semaines après la soumission complète du dossier. Vous recevrez une confirmation de réception sous 48h, puis des mises à jour régulières sur l'avancement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Puis-je modifier mon projet après soumission ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Les modifications mineures sont possibles dans les 48h suivant la soumission. Pour des changements majeurs, contactez notre équipe. Une fois l'évaluation commencée, seules des clarifications peuvent être apportées.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quels documents dois-je fournir ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Les documents requis incluent : budget détaillé, chronogramme d'activités, CV du porteur de projet, lettres de partenariat, et justificatifs de l'organisation (si applicable). La liste complète est envoyée après validation de l'éligibilité.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="section cta animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Rejoignez Notre Mission</h2>
+                <p style="color: rgba(255,255,255,0.9);">Ensemble, nous pouvons créer un impact durable et transformer des millions de vies à travers le monde</p>
+            </div>
+            <div class="cta-buttons">
+                <!-- <a href="#don" class="btn-h" style="background: white; color: var(--blue-primary);">
+                    <i class="fas fa-heart"></i> Faire un don
+                </a> -->
+                <a href="./contact-page.html" class="btn-h" style="background: transparent; color: white; border: 2px solid white;">
+                    <i class="fas fa-handshake"></i> Devenir partenaire
+                </a>
+                <a href="./project-submission.html" class="btn-h" style="background: var(--orange-accent); color: white;">
+                    <i class="fas fa-lightbulb"></i> Soumettre un projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Restez Informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités, appels à projets et rapports d'impact</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required aria-label="Adresse email pour la newsletter">
+                <button type="submit" class="btn-h btn-h-primary">
+                    <i class="fas fa-envelope"></i>
+                    S'abonner
+                </button>
+            </form>
+            <p style="font-size: 14px; margin-top: 15px; opacity: 0.7;">
+                En vous abonnant, vous acceptez de recevoir nos communications. Vous pouvez vous désabonner à tout moment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section partners animate-on-scroll" id="partenaires">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Partenaires Stratégiques</h2>
+                <p>Nous collaborons avec des organisations internationales reconnues pour maximiser notre impact</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <strong>FMI</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>ONU</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>Banque Mondiale</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>AFD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>BAD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>UNESCO</strong>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; font-style: italic; color: var(--blue-primary);">
+                "Des partenariats solides pour des solutions durables et un impact global"
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>
+                    <img src="./assets/images/fmdi-logo-3.png" alt="" height="50" width="100">
+                </h4>
+                <p>Fonds Mondial pour le Développement Inclusif</p>
+                <p>Siège digital - Présence mondiale</p>
+                <p>Email: contact@fmdi.org</p>
+                <p>Tél: +33 1 23 45 67 89</p>
+                <!-- <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div> -->
+            </div>
+
+            <div class="footer-section">
+                <h4>Actions</h4>
+                <a href="./project-submission.html">Déposer un projet</a>
+                <a href="./contact-page.html">Devenir partenaire</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <a href="./about.html">À propos</a>
+                <a href="./secteurs-intervention.html">Secteurs d'intervention</a>
+                <a href="./projets-finances.html">Projets financés</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <a href="./legals/mention-legal.html" target="_blank">Mentions légales</a>
+                <a href="./legals/politique-de-confidentialite.html" target="_blank">Politique de confidentialité</a>
+                <a href="./legals/cookies.html" target="_blank">Gestion des cookies</a>
+                <!-- <a href="#accessibilite">Accessibilité</a> -->
+                <a href="./legals/cgv.html" target="_blank">Conditions générales</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FMDI - Fonds Mondial pour le Développement Inclusif. Tous droits réservés.</p>
+            <p>Site conçu avec accessibilité et performance en priorité</p>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js?v=1"></script>
+    <script src="./assets/js/project-submission.js?v=1"></script>
+
+
+</body>
+
+</html>

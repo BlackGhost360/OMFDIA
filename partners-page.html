@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partenaires FMDI - Ils bâtissent l'impact avec nous</title>
+    <meta name="description" content="Découvrez les partenaires du FMDI qui transforment des vies à travers le monde. Collaborations ONG, développement inclusif et impact social durable.">
+    <meta name="keywords" content="partenaires ONG, collaborations développement inclusif, FMDI, impact social, développement durable">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="./index.html" class="logo" aria-label="Accueil FMDI">
+                <img src="./assets/images/fmdi-logo-3.png" alt="" height="60" width="150">
+                <!-- FMDI -->
+            </a>
+
+            <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+                <a href="./index.html">Accueil</a>
+                <a href="./about.html">À propos</a>
+                <a href="./projets-finances.html">Projets financés</a>
+                <a href="./project-submission.html">Dépôt de projet</a>
+                <a href="./secteurs-intervention.html">Secteurs</a>
+                <a href="./partners-page.html" class="active-nav">Partenaires</a>
+                <a href="./contact-page.html">Contact</a>
+
+                <div class="language-selector">
+                    <button class="active" aria-label="Version française">FR</button>
+                    <button aria-label="English version">EN</button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero-about" role="banner">
+        <div class="hero-about-content">
+            <h1>Ils bâtissent l'impact avec nous</h1>
+            <p>Unis pour transformer des vies, découvrez ceux qui rendent le changement possible.</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="sante">Santé</button>
+            <button class="filter-btn" data-filter="education">Éducation</button>
+            <button class="filter-btn" data-filter="environnement">Environnement</button>
+            <button class="filter-btn" data-filter="economie">Économie</button>
+            <button class="filter-btn" data-filter="international">Organisations Internationales</button>
+        </div>
+    </section>
+
+    <!-- Partner-partenaires Section -->
+    <section class="partner-partenaires-section">
+        <div class="partner-partenaires-grid" id="partner-partenairesGrid">
+
+            <!-- Banque Mondiale -->
+            <div class="partner-partenaire-card" data-category="economie international">
+                <div class="partner-partenaire-logo">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="partner-partenaire-name">Banque Mondiale</h3>
+                <p class="partner-partenaire-mission">Financer le développement durable et réduire la pauvreté à l'échelle mondiale.</p>
+                <div class="partner-partenaire-image" style="background-image: url(./assets/images/partners-banque-Mondiale.jpeg);"></div>
+                <p class="partner-partenaire-project">Co-financement de l'accès à l'eau potable solaire et soutien aux microprojets agricoles féminins en Afrique subsaharienne.</p>
+                <div class="partner-partenaire-quote">"Grâce au FMDI, notre action a franchi de nouvelles frontières en touchant directement les communautés les plus vulnérables."</div>
+                <a href="#" class="partner-partenaire-btn">En savoir plus</a>
+            </div>
+
+            <!-- UNICEF -->
+            <div class="partner-partenaire-card" data-category="education sante">
+                <div class="partner-partenaire-logo">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3 class="partner-partenaire-name">UNICEF</h3>
+                <p class="partner-partenaire-mission">Défendre les droits des enfants et leur accès à l'éducation et à la santé.</p>
+                <div class="partner-partenaire-image" style="background-image: url(./assets/images/partners-UNICEF.jpeg);"></div>
+                <p class="partner-partenaire-project">Distribution de kits sanitaires, bourses scolaires pour filles en milieux défavorisés.</p>
+                <div class="partner-partenaire-quote">"Le partenariat avec FMDI nous permet d'atteindre les enfants là où ils sont, avec des solutions adaptées à leur réalité."</div>
+                <a href="#" class="partner-partenaire-btn">En savoir plus</a>
+            </div>
+
+            <!-- OMS -->
+            <div class="partner-partenaire-card" data-category="sante international">
+                <div class="partner-partenaire-logo">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3 class="partner-partenaire-name">Organisation Mondiale de la Santé</h3>
+                <p class="partner-partenaire-mission">Assurer la santé universelle de qualité pour tous.</p>
+                <div class="partner-partenaire-image" style="background-image: url(./assets/images/partners-OMS.jpeg);"></div>
+                <p class="partner-partenaire-project">Campagnes de vaccination et téléconsultations en zones isolées soutenues par FMDI.</p>
+                <div class="partner-partenaire-quote">"Ensemble, nous rendons les soins de santé accessibles même dans les régions les plus reculées."</div>
+                <a href="#" class="partner-partenaire-btn">En savoir plus</a>
+            </div>
+
+            <!-- Plan International -->
+            <div class="partner-partenaire-card" data-category="education">
+                <div class="partner-partenaire-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="partner-partenaire-name">Plan International</h3>
+                <p class="partner-partenaire-mission">Défendre les droits des enfants et des filles via éducation et protection.</p>
+                <div class="partner-partenaire-image" style="background-image: url(./assets/images/partners-plan-inter.jpeg);"></div>
+                <p class="partner-partenaire-project">Projet bourses scolaires pour 800 jeunes filles rurales, réduction du décrochage scolaire.</p>
+                <div class="partner-partenaire-quote">"Avec FMDI, chaque fille a la chance de construire son avenir par l'éducation."</div>
+                <a href="#" class="partner-partenaire-btn">En savoir plus</a>
+            </div>
+
+            <!-- Fondation Bill & Melinda Gates -->
+            <div class="partner-partenaire-card" data-category="sante education">
+                <div class="partner-partenaire-logo">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="partner-partenaire-name">Fondation Bill & Melinda Gates</h3>
+                <p class="partner-partenaire-mission">Promouvoir la santé mondiale et l'éducation par l'innovation.</p>
+                <div class="partner-partenaire-image" style="background-image: url(./assets/images/partners-fondation-bill.jpeg);"></div>
+                <p class="partner-partenaire-project">Appui à la santé communautaire numérique et aux programmes éducatifs innovants.</p>
+                <div class="partner-partenaire-quote">"L'innovation au service de l'humanité, c'est ce que nous partageons avec FMDI."</div>
+                <a href="#" class="partner-partenaire-btn">En savoir plus</a>
+            </div>
+
+            <!-- Global Environment Facility -->
+            <div class="partner-partenaire-card" data-category="environnement">
+                <div class="partner-partenaire-logo">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3 class="partner-partenaire-name">Global Environment Facility (FEM)</h3>
+                <p class="partner-partenaire-mission">Financer les initiatives environnementales à l'échelle mondiale.</p>
+                <div class="partner-partenaire-image" style="background-image: url(./assets/images/partners-environnement.jpeg);"></div>
+                <p class="partner-partenaire-project">Co-financement des projets de reboisement et de gestion durable des déchets.</p>
+                <div class="partner-partenaire-quote">"Protéger notre planète, c'est protéger notre avenir commun."</div>
+                <a href="#" class="partner-partenaire-btn">En savoir plus</a>
+            </div>
+
+            <!-- PNUD -->
+            <div class="partner-partenaire-card" data-category="economie international">
+                <div class="partner-partenaire-logo">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3 class="partner-partenaire-name">Programme des Nations Unies pour le Développement</h3>
+                <p class="partner-partenaire-mission">Promouvoir la réduction de la pauvreté et le développement durable.</p>
+                <div class="partner-partenaire-image" style="background-image: url(./assets/images/partners-programme-nations-unies.jpeg);"></div>
+                <p class="partner-partenaire-project">Soutien technique aux programmes d'autonomisation et protection sociale locaux déployés par le FMDI.</p>
+                <div class="partner-partenaire-quote">"Développer ensemble les capacités locales pour un impact durable."</div>
+                <a href="#" class="partner-partenaire-btn">En savoir plus</a>
+            </div>
+
+            <!-- Union Européenne -->
+            <div class="partner-partenaire-card" data-category="environnement economie">
+                <div class="partner-partenaire-logo">
+                    <i class="fas fa-flag"></i>
+                </div>
+                <h3 class="partner-partenaire-name">Union Européenne</h3>
+                <p class="partner-partenaire-mission">Promouvoir la paix, la stabilité et le développement durable à l'international.</p>
+                <div class="partner-partenaire-image" style="background-image: url(./assets/images/partners-UE.jpeg);"></div>
+                <p class="partner-partenaire-project">Soutien à des projets d'énergie renouvelable et lutte contre la pauvreté rurale.</p>
+                <div class="partner-partenaire-quote">"Une coopération qui transcende les frontières pour un monde plus juste."</div>
+                <a href="#" class="partner-partenaire-btn">En savoir plus</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Rejoignez Notre Mission</h2>
+                <p style="color: rgba(255,255,255,0.9);">Ensemble, nous pouvons créer un impact durable et transformer des millions de vies à travers le monde</p>
+            </div>
+            <div class="cta-buttons">
+                <!-- <a href="#don" class="btn-h" style="background: white; color: var(--blue-primary);">
+                    <i class="fas fa-heart"></i> Faire un don
+                </a> -->
+                <a href="./contact-page.html" class="btn-h" style="background: transparent; color: white; border: 2px solid white;">
+                    <i class="fas fa-handshake"></i> Devenir partenaire
+                </a>
+                <a href="./project-submission.html" class="btn-h" style="background: var(--orange-accent); color: white;">
+                    <i class="fas fa-lightbulb"></i> Soumettre un projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Restez Informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités, appels à projets et rapports d'impact</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required aria-label="Adresse email pour la newsletter">
+                <button type="submit" class="btn-h btn-h-primary">
+                    <i class="fas fa-envelope"></i>
+                    S'abonner
+                </button>
+            </form>
+            <p style="font-size: 14px; margin-top: 15px; opacity: 0.7;">
+                En vous abonnant, vous acceptez de recevoir nos communications. Vous pouvez vous désabonner à tout moment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section partners animate-on-scroll" id="partenaires">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Partenaires Stratégiques</h2>
+                <p>Nous collaborons avec des organisations internationales reconnues pour maximiser notre impact</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <strong>FMI</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>ONU</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>Banque Mondiale</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>AFD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>BAD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>UNESCO</strong>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; font-style: italic; color: var(--blue-primary);">
+                "Des partenariats solides pour des solutions durables et un impact global"
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>
+                    <img src="./assets/images/fmdi-logo-3.png" alt="" height="50" width="100">
+                </h4>
+                <p>Fonds Mondial pour le Développement Inclusif</p>
+                <p>Siège digital - Présence mondiale</p>
+                <p>Email: contact@fmdi.org</p>
+                <p>Tél: +33 1 23 45 67 89</p>
+                <!-- <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div> -->
+            </div>
+
+            <div class="footer-section">
+                <h4>Actions</h4>
+                <a href="./project-submission.html">Déposer un projet</a>
+                <a href="./contact-page.html">Devenir partenaire</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <a href="./about.html">À propos</a>
+                <a href="./secteurs-intervention.html">Secteurs d'intervention</a>
+                <a href="./projets-finances.html">Projets financés</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <a href="./legals/mention-legal.html" target="_blank">Mentions légales</a>
+                <a href="./legals/politique-de-confidentialite.html" target="_blank">Politique de confidentialité</a>
+                <a href="./legals/cookies.html" target="_blank">Gestion des cookies</a>
+                <!-- <a href="#accessibilite">Accessibilité</a> -->
+                <a href="./legals/cgv.html" target="_blank">Conditions générales</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FMDI - Fonds Mondial pour le Développement Inclusif. Tous droits réservés.</p>
+            <p>Site conçu avec accessibilité et performance en priorité</p>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js?v=1"></script>
+
+
+</body>
+
+</html>

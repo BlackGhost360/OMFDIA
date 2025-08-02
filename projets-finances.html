@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets financés à travers le monde - FMDI | Fonds Mondial pour le Développement Inclusif</title>
+    <meta name="description" content="Découvrez les projets de développement inclusif financés par le FMDI dans le monde entier. Santé, éducation, agriculture - Impact concret pour millions de bénéficiaires.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="./index.html" class="logo" aria-label="Accueil FMDI">
+                <img src="./assets/images/fmdi-logo-3.png" alt="" height="60" width="150">
+                <!-- FMDI -->
+            </a>
+
+            <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+                <a href="./index.html">Accueil</a>
+                <a href="./about.html">À propos</a>
+                <a href="./projets-finances.html" class="active-nav">Projets financés</a>
+                <a href="./project-submission.html">Dépôt de projet</a>
+                <a href="./secteurs-intervention.html">Secteurs</a>
+                <a href="./partners-page.html">Partenaires</a>
+                <a href="./contact-page.html">Contact</a>
+
+                <div class="language-selector">
+                    <button class="active" aria-label="Version française">FR</button>
+                    <button aria-label="English version">EN</button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section class="hero-about" role="banner">
+        <div class="hero-about-content">
+            <h1>Projets financés à travers le monde</h1>
+            <p>Découvrez comment nos financements transforment la vie de millions de bénéficiaires</p>
+        </div>
+    </section>
+
+    <!-- Filtres et Recherche -->
+    <section class="filters-section" role="search" aria-label="Filtres de recherche des projets">
+        <div class="filters-container">
+            <div class="search-bar">
+                <input type="search" class="search-input" placeholder="Rechercher un projet par mot-clé..." aria-label="Rechercher des projets" id="searchInput">
+            </div>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="regionFilter" class="filter-label">Région</label>
+                    <select id="regionFilter" class="filter-select" aria-label="Filtrer par région">
+                        <option value="">Toutes les régions</option>
+                        <option value="afrique">Afrique</option>
+                        <option value="asie">Asie</option>
+                        <option value="ameriques">Amériques</option>
+                        <option value="europe">Europe</option>
+                        <option value="oceanie">Océanie</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sectorFilter" class="filter-label">Secteur</label>
+                    <select id="sectorFilter" class="filter-select" aria-label="Filtrer par secteur">
+                        <option value="">Tous les secteurs</option>
+                        <option value="sante">Santé</option>
+                        <option value="education">Éducation</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="environnement">Environnement</option>
+                        <option value="economie">Économie sociale</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="statusFilter" class="filter-label">Statut</label>
+                    <select id="statusFilter" class="filter-select" aria-label="Filtrer par statut">
+                        <option value="">Tous les statuts</option>
+                        <option value="en-cours">En cours</option>
+                        <option value="complete">Complété</option>
+                        <option value="planifie">Planifié</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content-pf">
+        <!-- Statistiques -->
+        <section class="stat-pfs-section" aria-labelledby="stat-pfs-title">
+            <h2 id="stat-pfs-title" class="sr-only">Stat-pfistiques des projets FMDI</h2>
+            <div class="stat-pf-card fade-in">
+                <span class="stat-pf-number" data-target="1247">0</span>
+                <span class="stat-pf-label">Projets financés</span>
+            </div>
+            <div class="stat-pf-card fade-in">
+                <span class="stat-pf-number" data-target="2400000">0</span>
+                <span class="stat-pf-label">Bénéficiaires impactés</span>
+            </div>
+            <div class="stat-pf-card fade-in">
+                <span class="stat-pf-number" data-target="87">0</span>
+                <span class="stat-pf-label">Pays d'intervention</span>
+            </div>
+            <div class="stat-pf-card fade-in">
+                <span class="stat-pf-number" data-target="156">0</span>
+                <span class="stat-pf-label">Millions € investis</span>
+            </div>
+        </section>
+
+        <!-- Grille des projets -->
+        <section class="projects-grid" aria-labelledby="projects-title">
+            <h2 id="projects-title" class="sr-only">Liste de quelques projets financés</h2>
+
+            <!-- Projet 1 - Existant -->
+            <article class="project-card-pf fade-in" data-region="afrique" data-sector="sante" data-status="en-cours">
+                <img src="./assets/images/projet-finance-1.avif" alt="Centre de santé communautaire avec personnel médical et patients au Kenya" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Afrique</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Centres de santé communautaires au Kenya</h3>
+                    <p class="project-description">
+                        Construction et équipement de 12 centres de santé communautaires dans les zones rurales du Kenya, permettant l'accès aux soins pour 45 000 habitants isolés.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Nakuru, Kenya</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 75%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 2 - Sénégal (existant) -->
+            <article class="project-card-pf project-hidden fade-in" data-region="afrique" data-sector="environnement" data-status="planifie">
+                <img src="./assets/images/projet-finance-2.jpeg" alt="Installation de panneaux solaires dans un village au Sénégal" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Afrique</span>
+                        <span class="badge badge-status">Planifié</span>
+                    </div>
+                    <h3 class="project-title">Énergie solaire communautaire au Sénégal</h3>
+                    <p class="project-description">
+                        Installation de systèmes d'énergie solaire dans 18 villages isolés, fournissant l'électricité à 12 000 habitants et alimentant dispensaires et écoles.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Tambacounda, Sénégal</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 25%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 3 - Ghana (existant) -->
+            <article class="project-card-pf project-hidden fade-in" data-region="afrique" data-sector="education" data-status="en-cours">
+                <img src="./assets/images/projet-finance-3.avif" alt="Bibliothèque numérique avec tablettes pour enfants au Ghana" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Afrique</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Bibliothèques numériques au Ghana</h3>
+                    <p class="project-description">
+                        Création de 15 bibliothèques numériques équipées de tablettes et connexion internet, offrant l'accès à l'éducation digitale pour 6 000 jeunes.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Ashanti, Ghana</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 85%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Nouveaux projets Afrique -->
+
+            <!-- Projet 4 - Éthiopie -->
+            <article class="project-card-pf project-hidden fade-in" data-region="afrique" data-sector="eau" data-status="en-cours">
+                <img src="./assets/images/projet-finance-4.avif" alt="Forage de puits d'eau potable en Éthiopie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Afrique</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Accès à l'eau potable en Éthiopie</h3>
+                    <p class="project-description">
+                        Forage de 80 puits et installation de systèmes de purification d'eau dans la région d'Oromia, bénéficiant à 35 000 personnes dans 40 villages.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Oromia, Éthiopie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 65%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 5 - Madagascar -->
+            <article class="project-card-pf project-hidden fade-in" data-region="afrique" data-sector="nutrition" data-status="complete">
+                <img src="./assets/images/projet-finance-5.avif" alt="Programme de nutrition pour enfants à Madagascar" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Afrique</span>
+                        <span class="badge badge-completed">Complété</span>
+                    </div>
+                    <h3 class="project-title">Lutte contre la malnutrition infantile à Madagascar</h3>
+                    <p class="project-description">
+                        Programme nutritionnel d'urgence ayant permis de traiter 15 000 enfants souffrant de malnutrition aiguë et de former 500 mères aux bonnes pratiques alimentaires.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Antananarivo, Madagascar</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 100%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 6 - Nigeria -->
+            <article class="project-card-pf project-hidden fade-in" data-region="afrique" data-sector="formation" data-status="en-cours">
+                <img src="./assets/images/projet-finance-6.avif" alt="Centre de formation professionnelle au Nigeria" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Afrique</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Formation professionnelle des jeunes au Nigeria</h3>
+                    <p class="project-description">
+                        Création de 5 centres de formation technique et professionnelle offrant des compétences en mécanique, couture et informatique à 3 000 jeunes défavorisés.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Lagos, Nigeria</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 45%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 7 - Burkina Faso -->
+            <article class="project-card-pf project-hidden fade-in" data-region="afrique" data-sector="urgence" data-status="planifie">
+                <img src="./assets/images/projet-finance-7.avif" alt="Camp de réfugiés au Burkina Faso" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Afrique</span>
+                        <span class="badge badge-status">Planifié</span>
+                    </div>
+                    <h3 class="project-title">Aide d'urgence aux déplacés internes au Burkina Faso</h3>
+                    <p class="project-description">
+                        Programme d'assistance humanitaire d'urgence pour 25 000 personnes déplacées : abris temporaires, distributions alimentaires et soins médicaux de base.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Ouagadougou, Burkina Faso</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 15%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+
+            <!-- Projet 8 - Bangladesh (existant) -->
+            <article class="project-card-pf fade-in" data-region="asie" data-sector="education" data-status="complete">
+                <img src="./assets/images/projet-finance-8.avif" alt="École primaire avec enfants en classe au Bangladesh" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Asie</span>
+                        <span class="badge badge-completed">Complété</span>
+                    </div>
+                    <h3 class="project-title">Écoles inclusives au Bangladesh</h3>
+                    <p class="project-description">
+                        Programme d'alphabétisation et d'éducation inclusive pour 8 000 enfants en situation de handicap dans 25 écoles adaptées du Bangladesh rural.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Sylhet, Bangladesh</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 100%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 9 - Inde (existant) -->
+            <article class="project-card-pf project-hidden fade-in" data-region="asie" data-sector="economie" data-status="complete">
+                <img src="./assets/images/projet-finance-9.jpeg" alt="Femmes entrepreneurs dans une coopérative de microcrédit en Inde" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Asie</span>
+                        <span class="badge badge-completed">Complété</span>
+                    </div>
+                    <h3 class="project-title">Microcrédit pour femmes entrepreneures en Inde</h3>
+                    <p class="project-description">
+                        Programme de microcrédit et formation entrepreneuriale pour 2 500 femmes rurales, leur permettant de créer ou développer leurs petites entreprises.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Rajasthan, Inde</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 100%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Nouveaux projets Asie -->
+
+            <!-- Projet 10 - Philippines -->
+            <article class="project-card-pf project-hidden fade-in" data-region="asie" data-sector="urgence" data-status="en-cours">
+                <img src="./assets/images/projet-finance-10.jpeg" alt="Reconstruction après typhon aux Philippines" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Asie</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Reconstruction post-typhon aux Philippines</h3>
+                    <p class="project-description">
+                        Programme de reconstruction de 200 habitations et 10 écoles détruites par le typhon, avec formation aux techniques de construction résistantes aux catastrophes naturelles.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Leyte, Philippines</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 70%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 11 - Cambodge -->
+            <article class="project-card-pf project-hidden fade-in" data-region="asie" data-sector="sante" data-status="en-cours">
+                <img src="./assets/images/projet-finance-11.jpeg" alt="Clinique mobile au Cambodge" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Asie</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Cliniques mobiles au Cambodge</h3>
+                    <p class="project-description">
+                        Déploiement de 8 cliniques mobiles équipées pour atteindre les communautés rurales isolées, offrant soins primaires et vaccinations à 20 000 personnes.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Siem Reap, Cambodge</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 55%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 12 - Myanmar -->
+            <article class="project-card-pf project-hidden fade-in" data-region="asie" data-sector="protection" data-status="complete">
+                <img src="./assets/images/projet-finance-12.jpeg" alt="Centre de protection pour enfants au Myanmar" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Asie</span>
+                        <span class="badge badge-completed">Complété</span>
+                    </div>
+                    <h3 class="project-title">Protection de l'enfance au Myanmar</h3>
+                    <p class="project-description">
+                        Création de 12 centres de protection pour enfants vulnérables, offrant hébergement sécurisé, éducation et soutien psychologique à 800 enfants en détresse.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Yangon, Myanmar</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 100%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 13 - Nepal -->
+            <article class="project-card-pf project-hidden fade-in" data-region="asie" data-sector="agriculture" data-status="en-cours">
+                <img src="./assets/images/projet-finance-13.avif" alt="Agriculture en terrasses au Népal" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Asie</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Agriculture de montagne durable au Népal</h3>
+                    <p class="project-description">
+                        Formation de 1 800 agriculteurs des régions montagneuses aux techniques d'agriculture biologique et création de coopératives de commercialisation équitable.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Pokhara, Népal</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 40%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projet 14 - Sri Lanka -->
+            <article class="project-card-pf project-hidden fade-in" data-region="asie" data-sector="technologie" data-status="planifie">
+                <img src="./assets/images/projet-finance-14.avif" alt="Centre de formation informatique au Sri Lanka" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Asie</span>
+                        <span class="badge badge-status">Planifié</span>
+                    </div>
+                    <h3 class="project-title">Alphabétisation numérique au Sri Lanka</h3>
+                    <p class="project-description">
+                        Mise en place de 20 centres d'apprentissage numérique dans les zones rurales, formant 4 000 jeunes aux compétences informatiques et à l'entrepreneuriat digital.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Kandy, Sri Lanka</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 20%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <!-- Projets Amériques (7 projets) -->
+
+            <!-- Projet 15 - Pérou (existant) -->
+            <article class="project-card-pf fade-in" data-region="ameriques" data-sector="agriculture" data-status="en-cours">
+                <img src="./assets/images/projet-finance-15.avif" alt="Agriculteurs dans une coopérative agricole durable au Pérou" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Amériques</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Agriculture durable au Pérou</h3>
+                    <p class="project-description">
+                        Formation de 1 200 petits agriculteurs aux techniques agricoles durables et création de coopératives pour améliorer leur accès aux marchés.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Cusco, Pérou</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 60%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="ameriques" data-sector="securite-alimentaire" data-status="termine">
+                <img src="./assets/images/projet-finance-16.org_water30" alt="Programme de sécurité alimentaire en Haïti" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Amériques</span>
+                        <span class="badge badge-status">Terminé</span>
+                    </div>
+                    <h3 class="project-title">Sécurité alimentaire en Haïti</h3>
+                    <p class="project-description">
+                        Distribution de kits alimentaires et soutien à la relance de la production locale pour 5 000 familles après le séisme.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Port-au-Prince, Haïti</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 100%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="ameriques" data-sector="education" data-status="en-cours">
+                <img src="./assets/images/projet-finance-17.jpeg" alt="École inclusive en Bolivie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Amériques</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Éducation inclusive en Bolivie</h3>
+                    <p class="project-description">
+                        Construction de salles de classe accessibles et formation des enseignants à l’éducation inclusive pour les enfants handicapés.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>La Paz, Bolivie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 75%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+
+            <article class="project-card-pf project-hidden fade-in" data-region="ameriques" data-sector="eau" data-status="en-cours">
+                <img src="./assets/images/projet-finance-18.jpeg" alt="Installation de systèmes d’eau potable en Colombie rurale" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Amériques</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Accès à l’eau potable en Colombie</h3>
+                    <p class="project-description">
+                        Installation de 20 systèmes de purification d’eau dans des villages reculés et formation des populations à leur entretien.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Chocó, Colombie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 45%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+
+            <article class="project-card-pf project-hidden fade-in" data-region="ameriques" data-sector="sante" data-status="en-cours">
+                <img src="./assets/images/projet-finance-19.jpeg" alt="Unité mobile médicale en zones andines au Chili" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Amériques</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Soins mobiles dans les Andes (Chili)</h3>
+                    <p class="project-description">
+                        Unité mobile médicale desservant villages isolés et communautés autochtones pour consultations et vaccinations.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Atacama, Chili</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 50%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+
+            <article class="project-card-pf project-hidden fade-in" data-region="ameriques" data-sector="agriculture" data-status="en-cours">
+                <img src="./assets/images/projet-finance-20.jpeg" alt="Développement agroforestier au Brésil" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Amériques</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Agroforesterie durable au Brésil</h3>
+                    <p class="project-description">
+                        Intégration d’arbres dans les cultures vivrières avec formation de 800 fermiers aux pratiques durables.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Mato Grosso, Brésil</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 45%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+
+            <article class="project-card-pf project-hidden fade-in" data-region="ameriques" data-sector="nutrition" data-status="en-cours">
+                <img src="./assets/images/projet-finance-21.jpeg" alt="Distribution de repas scolaires nutritifs en Haïti" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Amériques</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Cantines scolaires saines en Haïti</h3>
+                    <p class="project-description">
+                        Distribution de repas nutritifs dans 50 écoles rurales, ciblant 20 000 enfants pour améliorer la nutrition.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Port‑au‑Prince, Haïti</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 35%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+
+            <!-- les projet de l'Europe -->
+
+            <article class="project-card-pf fade-in" data-region="europe" data-sector="energie" data-status="en-cours">
+                <img src="./assets/images/projet-finance-22.jpeg" alt="Panneaux solaires dans un village en Bulgarie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Europe</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Transition énergétique en Bulgarie rurale</h3>
+                    <p class="project-description">
+                        Installation de systèmes solaires dans 500 foyers ruraux pour favoriser l’autonomie énergétique et réduire la dépendance au charbon.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Veliko Tarnovo, Bulgarie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 70%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="europe" data-sector="education" data-status="termine">
+                <img src="./assets/images/projet-finance-23.jpeg" alt="Salle de classe numérique en Roumanie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Europe</span>
+                        <span class="badge badge-status">Terminé</span>
+                    </div>
+                    <h3 class="project-title">Numérisation des écoles rurales</h3>
+                    <p class="project-description">
+                        Équipement de 150 écoles en matériel informatique et formation de 300 enseignants à l'utilisation d’outils numériques.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Bacău, Roumanie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 100%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="europe" data-sector="sante" data-status="en-cours">
+                <img src="./assets/images/projet-finance-24.jpeg" alt="Centre médical mobile en Serbie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Europe</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Accès aux soins pour les zones isolées</h3>
+                    <p class="project-description">
+                        Mise en place de cliniques mobiles pour assurer des soins primaires à plus de 10 000 personnes dans les régions montagneuses.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Zlatibor, Serbie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 55%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="europe" data-sector="inclusion" data-status="en-cours">
+                <img src="./assets/images/projet-finance-25.jpeg" alt="Intégration sociale des migrants" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Europe</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Intégration des réfugiés en Allemagne</h3>
+                    <p class="project-description">
+                        Programme d'intégration pour 5 000 réfugiés : cours de langue, insertion professionnelle et accompagnement social.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Leipzig, Allemagne</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 40%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="europe" data-sector="environnement" data-status="termine">
+                <img src="./assets/images/projet-finance-26.jpeg" alt="Reforestation en Slovénie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Europe</span>
+                        <span class="badge badge-status">Terminé</span>
+                    </div>
+                    <h3 class="project-title">Reboisement communautaire</h3>
+                    <p class="project-description">
+                        Plantation de 100 000 arbres avec la participation active des communautés locales dans les zones montagneuses.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Triglav, Slovénie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 100%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="europe" data-sector="emploi" data-status="en-cours">
+                <img src="./assets/images/projet-finance-27.jpeg" alt="Formation aux compétences numériques en Espagne" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Europe</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Compétences numériques pour l'emploi</h3>
+                    <p class="project-description">
+                        Formation de 2 000 jeunes au numérique pour améliorer leur employabilité dans les secteurs du digital.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Valence, Espagne</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 80%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="europe" data-sector="agriculture" data-status="en-cours">
+                <img src="./assets/images/projet-finance-28.jpeg" alt="Ferme urbaine durable en France" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Europe</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Agriculture urbaine en Île-de-France</h3>
+                    <p class="project-description">
+                        Mise en place de fermes verticales dans des quartiers urbains défavorisés pour renforcer la sécurité alimentaire locale.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Seine-Saint-Denis, France</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 65%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+
+            <!-- les projet de l'océanie -->
+
+            <article class="project-card-pf fade-in" data-region="oceanie" data-sector="environnement" data-status="en-cours">
+                <img src="./assets/images/projet-finance-29.jpeg" alt="Protection des récifs coralliens en Australie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Océanie</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Protection des récifs coralliens en Australie</h3>
+                    <p class="project-description">
+                        Programme de restauration et de surveillance des récifs de la Grande Barrière de Corail pour préserver la biodiversité marine.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Queensland, Australie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 50%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="oceanie" data-sector="education" data-status="planifie">
+                <img src="./assets/images/projet-finance-30.jpeg" alt="Classe en plein air dans une école rurale en Nouvelle-Zélande" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Océanie</span>
+                        <span class="badge badge-status">Planifié</span>
+                    </div>
+                    <h3 class="project-title">Éducation en plein air en Nouvelle-Zélande</h3>
+                    <p class="project-description">
+                        Création de programmes éducatifs en plein air pour 800 élèves des régions rurales, favorisant apprentissage et bien-être.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Canterbury, Nouvelle-Zélande</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 20%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="oceanie" data-sector="sante" data-status="en-cours">
+                <img src="./assets/images/projet-finance-31.jpeg" alt="Clinique mobile en Papouasie-Nouvelle-Guinée" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Océanie</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Soins mobiles pour communautés isolées</h3>
+                    <p class="project-description">
+                        Déploiement de cliniques mobiles fournissant soins primaires et vaccinations à 15 000 personnes dans les zones éloignées.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Highlands, Papouasie-Nouvelle-Guinée</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 60%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="oceanie" data-sector="agriculture" data-status="planifie">
+                <img src="./assets/images/projet-finance-32.jpeg" alt="Ferme durable en Fidji" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Océanie</span>
+                        <span class="badge badge-status">Planifié</span>
+                    </div>
+                    <h3 class="project-title">Agriculture durable aux Fidji</h3>
+                    <p class="project-description">
+                        Développement de techniques agricoles écologiques pour 300 fermiers, avec formation à l’agroforesterie et accès aux marchés locaux.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Viti Levu, Fidji</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 15%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="oceanie" data-sector="urgence" data-status="en-cours">
+                <img src="./assets/images/projet-finance-33.jpeg" alt="Intervention après cyclone en Vanuatu" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Océanie</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Aide post-cyclone au Vanuatu</h3>
+                    <p class="project-description">
+                        Assistance humanitaire avec distribution de vivres, abris temporaires et soins médicaux pour 12 000 sinistrés.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Port Vila, Vanuatu</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 45%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="oceanie" data-sector="technologie" data-status="planifie">
+                <img src="./assets/images/projet-finance-34.jpeg" alt="Centre de formation informatique en Australie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Océanie</span>
+                        <span class="badge badge-status">Planifié</span>
+                    </div>
+                    <h3 class="project-title">Formation digitale pour les jeunes en Australie</h3>
+                    <p class="project-description">
+                        Mise en place de 10 centres de formation aux compétences numériques pour 1 200 jeunes dans les zones urbaines défavorisées.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Sydney, Australie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 10%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+            <article class="project-card-pf project-hidden fade-in" data-region="oceanie" data-sector="tourisme" data-status="en-cours">
+                <img src="./assets/images/projet-finance-35.jpeg" alt="Développement du tourisme durable en Nouvelle-Calédonie" class="project-image-pf" loading="lazy">
+                <div class="project-content-pf">
+                    <div class="project-badges">
+                        <span class="badge badge-region">Océanie</span>
+                        <span class="badge badge-status">En cours</span>
+                    </div>
+                    <h3 class="project-title">Tourisme durable en Nouvelle-Calédonie</h3>
+                    <p class="project-description">
+                        Soutien aux initiatives locales pour un tourisme responsable respectant l’environnement et la culture kanak.
+                    </p>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Nouméa, Nouvelle-Calédonie</span>
+                    </div>
+                    <div class="progress-bar-pf" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill-pf" style="width: 35%"></div>
+                    </div>
+                    <!-- <a href="#" class="project-cta">En savoir plus</a> -->
+                </div>
+            </article>
+
+        </section>
+        <div class="d-flex align-items-center justify-content-center">
+            <button class="btn btn-primary" id="btnAfficher">Charger tout</button>
+        </div>
+
+    </main>
+
+    <!-- CTA Section -->
+    <section class="section cta animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Rejoignez Notre Mission</h2>
+                <p style="color: rgba(255,255,255,0.9);">Ensemble, nous pouvons créer un impact durable et transformer des millions de vies à travers le monde</p>
+            </div>
+            <div class="cta-buttons">
+                <!-- <a href="#don" class="btn-h" style="background: white; color: var(--blue-primary);">
+                    <i class="fas fa-heart"></i> Faire un don
+                </a> -->
+                <a href="./contact-page.html" class="btn-h" style="background: transparent; color: white; border: 2px solid white;">
+                    <i class="fas fa-handshake"></i> Devenir partenaire
+                </a>
+                <a href="./project-submission.html" class="btn-h" style="background: var(--orange-accent); color: white;">
+                    <i class="fas fa-lightbulb"></i> Soumettre un projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Restez Informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités, appels à projets et rapports d'impact</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required aria-label="Adresse email pour la newsletter">
+                <button type="submit" class="btn-h btn-h-primary">
+                    <i class="fas fa-envelope"></i>
+                    S'abonner
+                </button>
+            </form>
+            <p style="font-size: 14px; margin-top: 15px; opacity: 0.7;">
+                En vous abonnant, vous acceptez de recevoir nos communications. Vous pouvez vous désabonner à tout moment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section partners animate-on-scroll" id="partenaires">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Partenaires Stratégiques</h2>
+                <p>Nous collaborons avec des organisations internationales reconnues pour maximiser notre impact</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <strong>FMI</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>ONU</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>Banque Mondiale</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>AFD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>BAD</strong>
+                </div>
+                <div class="partner-logo">
+                    <strong>UNESCO</strong>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; font-style: italic; color: var(--blue-primary);">
+                "Des partenariats solides pour des solutions durables et un impact global"
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>
+                    <img src="./assets/images/fmdi-logo-3.png" alt="" height="50" width="100">
+                </h4>
+                <p>Fonds Mondial pour le Développement Inclusif</p>
+                <p>Siège digital - Présence mondiale</p>
+                <p>Email: contact@fmdi.org</p>
+                <p>Tél: +33 1 23 45 67 89</p>
+                <!-- <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div> -->
+            </div>
+
+            <div class="footer-section">
+                <h4>Actions</h4>
+                <a href="./project-submission.html">Déposer un projet</a>
+                <a href="./contact-page.html">Devenir partenaire</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <a href="./about.html">À propos</a>
+                <a href="./secteurs-intervention.html">Secteurs d'intervention</a>
+                <a href="./projets-finances.html">Projets financés</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <a href="./legals/mention-legal.html" target="_blank">Mentions légales</a>
+                <a href="./legals/politique-de-confidentialite.html" target="_blank">Politique de confidentialité</a>
+                <a href="./legals/cookies.html" target="_blank">Gestion des cookies</a>
+                <!-- <a href="#accessibilite">Accessibilité</a> -->
+                <a href="./legals/cgv.html" target="_blank">Conditions générales</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FMDI - Fonds Mondial pour le Développement Inclusif. Tous droits réservés.</p>
+            <p>Site conçu avec accessibilité et performance en priorité</p>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js?v=1"></script>
+
+    <script src="./assets/js/projets-finances.js"></script>
+
+</body>
+
+</html>
